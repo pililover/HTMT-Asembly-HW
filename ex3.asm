@@ -5,6 +5,7 @@ input2: .asciiz "a["
 input3: .asciiz "] = "
 space: .asciiz " "
 invalid: .asciiz "Invalid N! N must be less than or equal to 10"
+out_mess: .asciiz "\nOutput: "
 .text 
 main:
 	li $v0, 4
@@ -52,6 +53,10 @@ InputArray:
 
 next:
 	addi $s0, $0, 0
+
+	li $v0, 4
+	la $a0, out_mess
+	syscall
 	
 OutputArray:
 	beq $t0, $0, END

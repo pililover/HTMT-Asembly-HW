@@ -1,7 +1,7 @@
 .data
 prompt: .asciiz "Input: "
-result_uppercase: .asciiz "\n Result: uppercase"
-result_lowercase: .asciiz "\n Result: lowercase"
+result_uppercase: .asciiz "\nResult: uppercase"
+result_lowercase: .asciiz "\nResult: lowercase"
 invalid: .asciiz "\n Invalid input! Input data must be character"
 
 .text
