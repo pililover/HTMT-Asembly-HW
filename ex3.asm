@@ -4,7 +4,7 @@ input1: .asciiz "Input N: "
 input2: .asciiz "a["
 input3: .asciiz "] = "
 space: .asciiz " "
-invalid: .asciiz "Invalid N"
+invalid: .asciiz "Invalid N! N must be less than or equal to 10"
 .text 
 main:
 	li $v0, 4
@@ -79,4 +79,3 @@ error:
 END:
 	li $v0, 10
 	syscall
-

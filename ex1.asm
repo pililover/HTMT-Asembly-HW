@@ -24,30 +24,29 @@ main:
 	syscall
 	move $t1, $v0
 
-	beq $t0, $t1, printRes
+	beq $t0, $t1, printEqual
 
 	slt $t2, $t0, $t1
-	bne $t2, $0, printResult
+	bne $t2, $0, printLess
 
 	li $v0, 4
 	la $a0, case1
 	syscall
 	j END
 
-	printRes:
+	printEqual:
 		li $v0, 4
 		la $a0, case3
 		syscall
 		j END
 
-	printResult:
+	printLess:
 		li $v0, 4
 		la $a0, case2
 		syscall
 
 END:
-	addi $a0, $0, 0
-	addi $v0, $0, 17
+	li $v0, 10
 	syscall
 	
 
