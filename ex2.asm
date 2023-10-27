@@ -2,7 +2,7 @@
 prompt: .asciiz "Input: "
 result_uppercase: .asciiz "\nResult: uppercase"
 result_lowercase: .asciiz "\nResult: lowercase"
-invalid: .asciiz "\n Invalid input! Input data must be character"
+invalid: .asciiz "\nInvalid input! Input data must be character"
 
 .text
 .globl main
