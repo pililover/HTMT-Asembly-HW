@@ -4,7 +4,7 @@ input1: .asciiz "Input N: "
 input2: .asciiz "a["
 input3: .asciiz "] = "
 space: .asciiz " "
-invalid: .asciiz "Invalid N! N must be less than or equal to 10"
+invalid: .asciiz "Invalid N! N must be a positive integer less than or equal to 10"
 out_mess: .asciiz "\nOutput: "
 .text 
 main:
