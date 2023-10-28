@@ -1,5 +1,5 @@
 .data 
-Arr: .space 50
+Arr: .space 40
 input1: .asciiz "Input N: "
 input2: .asciiz "a["
 input3: .asciiz "] = "
